@@ -11,12 +11,15 @@ Requirements
 	
 Usage
 -----
+```
 $ python AnalyzePDF.py -h
 usage: AnalyzePDF.py [-h] [-m MOVE] [-y YARARULES] Path
+```
 
 Produces a high level overview of a PDF to quickly determine if further
 analysis is needed based on it's characteristics
 
+```
 positional arguments:
   Path                  Path to directory/file(s) to be scanned
 
@@ -26,5 +29,8 @@ optional arguments:
   -y YARARULES, --yararules YARARULES
                         Path to YARA rules. Rules should contain a weighted
                         score in the metadata section. (i.e. weight = 3)
-
-example: python AnalyzePDF.py -m tmp/badness -y foo/pdf.yara bar/getsome.pdf						
+```
+Example:
+```
+> python AnalyzePDF.py -m tmp/badness -y foo/pdf.yara bar/getsome.pdf						
+```
